@@ -8,7 +8,7 @@ def carregar_extratos(pasta_extratos):
     # Itera sobre os arquivos na pasta
     for extrato in os.listdir(pasta_extratos):
         # Abre e faz o parsing do arquivo OFX
-        with open(f'{pasta_extratos}/{extrato}', encoding='ISO-8859-1') as ofx_file:
+        with open(f'{pasta_extratos}/{extrato}', encoding='utf8') as ofx_file:
             ofx = ofxparse.OfxParser.parse(ofx_file)
 
         # Extrai os dados de transações
