@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.12"
 pandas = "^2.2.3"
 ofxparse = "^0.21"
+langchain-groq = "^0.2.0"
+python-dotenv = "^1.0.1"
 
 
 [build-system]

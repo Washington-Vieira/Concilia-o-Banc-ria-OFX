@@ -17,9 +17,13 @@ for extrato in os.listdir("extratos"):
                 "Descrição": transaction.memo,
                 "ID": transaction.id,
             })
-
 df_temp = pd.DataFrame(transactions_data)
 df_temp["Valor"] = df_temp["Valor"].astype(float)
 df_temp["Data"] = df_temp["Data"].apply(lambda x: x.date())
-df = pd.concat([df, df_temp])
+df = pd.concat([df, df_temp]) 
+
 print(df)
+
+# LLMs -  Conectar IA com os meus dados e criar categorias
+
+
